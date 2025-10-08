@@ -1,0 +1,101 @@
+/* Card hover effect */
+.d-flex{
+  background: linear-gradient(to right, #43e97b, #38f9d7);
+  border:1px solid black;
+  
+
+}
+.card {
+  overflow: hidden; 
+  cursor: pointer;
+  background-color: rgb(247, 215, 156);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card image zoom */
+.card img {
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* Add to Cart button */
+.links {
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.links:hover {
+  background-color: #16a085;
+  transform: scale(1.05);
+}
+
+/* Price and details */
+.price {
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 5px;
+}
+
+.details {
+  font-size: 14px;
+  color:black;
+  min-height: 40px; 
+}
+
+/* ===== Responsive Cards ===== */
+@media screen and (max-width: 992px) {
+  .card {
+    width: 50% !important;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: 85% !important;
+    margin-bottom: 15px;
+  }
+
+  .links {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  .details {
+    font-size: 12px;
+  }
+}
+
+  .all{
+    display: inline;
+  }
+  .alls{
+    display: block;
+    padding-top: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease-out;
+  }
+  .alls:hover{
+   color: red;
+   border-bottom:2px solid rgb(19, 18, 18);
+   width: fit-content;
+   font-weight: bold;
+  }

@@ -1,0 +1,8 @@
+
+.portals{
+        background-image: url('./assets/alls.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;  
+}

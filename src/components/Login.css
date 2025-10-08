@@ -1,0 +1,231 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.body{
+    height: 100vh;
+    width: 100%;
+    
+    /* background: linear-gradient(45deg, #49a09d 0%, #5f2c82 100%); */
+    /* background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3JmdWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80'); */
+
+    background-size: cover;
+    background-position: center;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 135px;
+}
+
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    margin: 100px auto;
+    background-color: none;
+}
+
+.login-container h2{
+    color: #37e2f8;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.login-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+.login-form input{
+    height: 40px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    position: relative;
+    background: none;
+    border-bottom: 2px solid #e1f3f2;
+}
+::placeholder{
+    color: #e2f0ee;
+    font-size: 16px;
+}
+.icon{
+    position: absolute;
+    right: 20px;
+    top:13px;
+    color: #49a09d;
+    transition: all 0.3s ease;
+}
+.icon:hover{
+    color: #37e2f8;
+    transform: translate3d(1.2px, -10px, 0);
+}
+.input-for{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 18px;
+}
+.input-for a{
+    text-decoration: none;
+    color: #0cece5;
+    font-size: 20px;
+}
+button{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: #49a09d;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: 
+    moving 0.5s ease-out infinite;
+}
+button:hover{
+    background: #37e2f8;
+}
+button:active{
+    transform: scale(0.98);
+}
+
+@keyframes moving {
+    0%,100%{
+        transform: translatex(0);
+    }
+    50%{
+        transform: translatex(-10px);
+    }
+}
+
+.signup-link{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #dae4e3;
+}
+.link{
+    text-decoration: none;
+    color: #19c3da;
+
+}
+.link:hover{
+    text-decoration: underline;
+    color: #e4f1f1;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+p{
+    font-size: 16px;
+    color: #dae4e3;
+    text-align: center;
+}
+.input-or{
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.or{
+    font-size: 20px;
+    color: #dae4e3;
+}
+
+.social-icons{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.font{
+
+    color: #d4ecec;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.font:hover{
+    color: #37e2f8;
+    transform: translate3d(0, -14px, 0);
+}
+
+/* signup css */
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    margin: 100px auto;
+}
+
+.signup-container h2{
+    color: #37e2f8;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.signup-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+input{
+
+    height: 40px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    position: relative;
+    background: none;
+    border-bottom: 2px solid #49a09d;
+    color: #dae4e3;
+
+}
+.terms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #dae4e3;
+    padding-top: 15px;
+}
