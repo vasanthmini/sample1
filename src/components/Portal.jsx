@@ -11,7 +11,6 @@ import Jersey from "./Jersey";
 import FootBall from "./FootBall";
 import About from "./About";
 import Contact from "./Contact";
-import Demo from "./Demo";
 
 
 
@@ -32,7 +31,6 @@ function Portal() {
         <Route path="FootBall" element={<FootBall />} />
         <Route path="About" element={<About />} />
         <Route path="Contact" element={<Contact />} />
-        <Route path="Demo" element={<Demo />} />
         <Route path="Main" element={<Main />} />
       </Route>
     </Routes>
